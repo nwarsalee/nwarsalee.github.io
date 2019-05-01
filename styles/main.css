@@ -1,9 +1,52 @@
 body {
-  background:#999;
-  font-family: arial;
+  margin: 0;
+  font-family: fantasy;
 }
 
-.construction {
-  background: red;
-  color: blue;
+header {
+  background: #999;
+  color:white;
+  margin:0;
+  padding: 15px 15px 0px 15px;
+}
+
+header h1 {
+  margin:0;
+  display: inline;
+}
+
+nav ul {
+  margin: 0;
+  padding: 15px;
+  display: inline;
+}
+
+nav ul li {
+  background: black;
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #ef5350;
+}
+
+.row {
+
+}
+
+.col {
+  background: #555;
+  float: left;
+  border-radius: 5px;
+  padding: 10px 0%;
+  margin: 0.5%;
+  width: 32%;
+}
+
+footer {
+  clear: both;
 }
