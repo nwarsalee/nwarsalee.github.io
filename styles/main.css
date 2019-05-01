@@ -34,8 +34,8 @@ nav ul li a {
   color: #ef5350;
 }
 
-.row {
-
+.row:after {
+  clear: both;
 }
 
 .col {
