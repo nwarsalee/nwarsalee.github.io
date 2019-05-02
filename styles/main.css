@@ -38,6 +38,10 @@ nav ul li a {
   color: #ef5350;
 }
 
+nav p {
+  margin: 0;
+}
+
 .row:after {
   display: flex;
   flex-direction: row;
@@ -52,6 +56,22 @@ nav ul li a {
   width: 32%;
 }
 
+section {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+section div {
+  background: red;
+  margin: auto;
+  width: 100%;
+  margin: 1px;
+}
+
 footer {
-  clear: both;
+  padding: 10px 0px;
+  margin-top: 10px;
 }
