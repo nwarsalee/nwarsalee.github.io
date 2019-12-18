@@ -1,0 +1,34 @@
+body {
+    color: $dark-gray;
+    font-family: $ff-s;
+    line-height: 1.6;
+    background: $white;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: $accent;
+    line-height: 1;
+    font-size: 4em;
+
+    span {
+        @include sans-serif($fs: 5.5rem, $ls : 10px, $colour: $accent);
+        display: block;
+    }
+}
+
+h2 {
+    @include sans-serif($fs: 2rem, $ls : 1px)
+}
+
+p {
+    font-size: 1rem;
+}

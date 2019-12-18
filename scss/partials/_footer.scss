@@ -1,0 +1,26 @@
+footer {
+    background: $dark-blue;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.social_icons {
+    @include container($max-width: 25em);
+    display: flex;
+    justify-content: space-between;
+    margin: 4em auto;
+}
+
+.social_icon {
+    width: 25%;
+    height: 25%;
+    //transition: 1s;
+}
+
+.social_icon:hover {
+    filter: invert(48%) sepia(68%) saturate(7389%) hue-rotate(346deg) brightness(99%) contrast(86%);
+}
+
+footer h1 {
+    color: $white;
+}

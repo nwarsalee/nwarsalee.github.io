@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Bebas+Neue&display=swap');
+
+$ff-s: "Abel", serif;
+$ff-ss: "Bebas Neue", sans-serif;
+
+$fw-n: 400;
+$fw-b: 900;
+
+$letter-spacing: 10px;
+
+@mixin sans-serif($fs, $ls: 10px, $colour: $gray, $tt: uppercase, $lh: 1) {
+    font-size: $fs;
+    letter-spacing: $ls;
+    color: $colour;
+    text-transform: $tt;
+    line-height: $lh;
+    font-weight: $fw-n;
+}

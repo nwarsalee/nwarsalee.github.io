@@ -1,0 +1,56 @@
+
+.about_title,
+.about_subtitle,
+.about_text {
+    margin-left: 10px;
+}
+
+.about_me {
+    @include container;
+    @include clearfix;
+
+
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.about_title {
+    font-size: 4em;
+    margin-bottom: .25em;
+}
+
+.about_img {
+    @media (min-width: 40em) {
+        float: left;
+        margin-right: 1em;
+    }
+    box-shadow: -10px 10px 7px rgb(216, 216, 216);
+}
+
+.about_subtitle {
+    letter-spacing: 1px;
+    .name {
+        color: $accent;
+    }
+}
+
+@supports(display: grid) {
+    .about_me {
+        display: grid;
+        grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+    }
+
+    .about_img {
+        grid-column: port-start / img-end;
+    }
+
+    .about_title {
+        grid-column: img-end / port;
+        align-self: end;
+    }
+
+    .about_subtitle,
+    .about_text {
+        grid-column: img-end / port;
+    }
+}

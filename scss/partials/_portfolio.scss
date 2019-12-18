@@ -1,0 +1,81 @@
+.portfolio {
+    text-align: center;
+    background-color: $light-gray;
+    padding: 5em 0;
+}
+
+.portfolio_items {
+    display: flex;
+    flex-wrap: wrap;
+    @include container($max-width: 75em);
+}
+
+.portfolio_item {
+    position: relative;
+    overflow: hidden;
+
+    flex: 1 1 10rem;
+
+    img {
+        display: block;
+        width: 100%;
+    } 
+
+    figcaption {
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2em;
+        background: rgba($accent, .75);
+        color: $white;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        transition: top ease-in-out 400ms;
+    }
+
+    &:hover figcaption,
+    &:focus figcaption {
+        top: 0;
+    }
+
+}
+
+.portfolio_title {
+    color: $white;
+    font-size: 4rem;
+    margin-bottom: auto;
+
+    .featured & {
+        font-size: 8rem;
+    }
+}
+
+//.portfolio_descr {
+    //display: none;
+//}
+
+.portfolio_link {
+    color: $white;
+    font-weight: $fw-b;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 2px solid $white;
+    align-self: flex-start;
+
+    // Figure out how to put an icon for the link
+}
+
+@supports (display: grid) {
+    .portfolio_items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio_item.featured {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}

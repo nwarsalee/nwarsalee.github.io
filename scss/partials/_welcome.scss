@@ -1,0 +1,43 @@
+.welcome {
+    background-image: url(../images/nabeel_nara_log.JPG);
+    background-size: cover;
+    background-position: center;
+    
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: $fw-n;
+        color: $light-gray;
+        line-height: 1.5;
+        text-align: center;
+
+        //background-color: rgba(214, 214, 214, 0.295);
+        //border-radius: 25px;
+        //padding: 15px;
+
+        span {
+            color: $white;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: $white;
+        }
+
+        &::before {
+            margin: 0 auto 2em;
+        }
+
+        &::after {
+            margin: 2em auto 0;
+        }
+    }
+}
