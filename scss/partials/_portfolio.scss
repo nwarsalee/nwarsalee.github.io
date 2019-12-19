@@ -14,6 +14,8 @@
     position: relative;
     overflow: hidden;
 
+    margin: 0;
+
     flex: 1 1 10rem;
 
     img {
@@ -45,17 +47,22 @@
 
 .portfolio_title {
     color: $white;
-    font-size: 4rem;
+    font-size: 1.5rem;
+    font-weight: $fw-b;
     margin-bottom: auto;
 
     .featured & {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 }
 
-//.portfolio_descr {
-    //display: none;
-//}
+.portfolio_descr {
+    line-height: 0;
+    .featured & {
+        line-height: 0;
+        display: contents;
+    }
+}
 
 .portfolio_link {
     color: $white;
@@ -71,11 +78,35 @@
 @supports (display: grid) {
     .portfolio_items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(15em, 1fr));
+
+        @include mq($width:1000px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .portfolio_item.featured {
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
+    }
+
+    .portfolio_header h1 {
+        @include title_box($p_top_bottom : 15px);
+        //max-width: 7em;
+        width: 6em;
+        margin: 0 auto;
+        margin-bottom: 0.75em;
+        align-self: center;
+    }
+
+    .portfolio_descr {
+        @include mq($width: 1200px) {
+            font-size: 14px;
+            display: contents;
+            line-height: 0;
+            .featured & {
+                font-size: 24px;
+            }
+        }
     }
 }

@@ -11,3 +11,18 @@
         clear: both;
     }
 }
+
+@mixin title_box($p_top_bottom: 0, $p_left : 0) {
+    background: $white;
+    border-style: solid;
+    border-color: $dark-blue;
+    box-shadow: -7px 7px 0px $accent;
+    padding: $p_top_bottom 0;
+    padding-left: $p_left;
+}
+
+@mixin mq($width: 50em) {
+    @media (min-width:$width) {
+        @content;
+    }
+}

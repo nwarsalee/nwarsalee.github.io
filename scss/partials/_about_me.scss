@@ -2,13 +2,12 @@
 .about_title,
 .about_subtitle,
 .about_text {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .about_me {
     @include container;
     @include clearfix;
-
 
     margin-top: 5em;
     margin-bottom: 5em;
@@ -16,22 +15,29 @@
 
 .about_title {
     font-size: 4em;
-    margin-bottom: .25em;
+    margin-bottom: 0;
 }
 
 .about_img {
     @media (min-width: 40em) {
         float: left;
         margin-right: 1em;
+        margin-bottom: 1.5em;
     }
     box-shadow: -10px 10px 7px rgb(216, 216, 216);
 }
 
 .about_subtitle {
     letter-spacing: 1px;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
     .name {
         color: $accent;
     }
+}
+
+.about_text p {
+    font-size: 24px;
 }
 
 @supports(display: grid) {
@@ -41,16 +47,26 @@
     }
 
     .about_img {
-        grid-column: port-start / img-end;
+        grid-column: port / img;
+        grid-row: 1/2;
     }
 
     .about_title {
-        grid-column: img-end / port;
+        grid-column: name / port;
+        grid-row: 1/2;
         align-self: end;
+        margin-left: 1.1em;
+        margin-bottom: 0.5em;
+        @include title_box($p_left : 20px);
+        font-size: 6em;
     }
 
     .about_subtitle,
     .about_text {
-        grid-column: img-end / port;
+        grid-column: port / port;
+    }
+
+    .about_subtitle {
+        margin: 0.5em 0;
     }
 }

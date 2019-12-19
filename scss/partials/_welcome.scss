@@ -18,9 +18,16 @@
         //background-color: rgba(214, 214, 214, 0.295);
         //border-radius: 25px;
         //padding: 15px;
+        @include mq {
+            font-size: 2vw;
+        }
 
         span {
             color: $white;
+
+            @include mq {
+                font-size: 5vw;
+            }
         }
 
         &::before,

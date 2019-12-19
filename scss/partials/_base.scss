@@ -3,6 +3,10 @@ body {
     font-family: $ff-s;
     line-height: 1.6;
     background: $white;
+
+    @include mq {
+        font-size: 1.125rem;
+    }
 }
 
 img {
@@ -26,7 +30,11 @@ h1 {
 }
 
 h2 {
-    @include sans-serif($fs: 2rem, $ls : 1px)
+    @include sans-serif($fs: 2rem, $ls : 1px);
+
+    @include mq {
+        font-size: 3.5rem;
+    }
 }
 
 p {
