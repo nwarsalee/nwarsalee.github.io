@@ -6,7 +6,7 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 
 ## Skills being worked
 * HTML
-* CSS
+* CSS (Sassy CSS)
 * Javascript
 
 ## Current TO-DO List
@@ -16,7 +16,20 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * ~~Add main.css to start adding style~~
 * ~~Figure out how the basics of css styling~~
 * ~~Added images to the website (added some effects to them too)~~
-* Continue to learn more about CSS and HTML (ie. Responsive design)
-* Make a plan for what content is going to be added to the site
-* Start adding content
-* Figure out how to use JS with the website
+* ~~Start complete redesign~~
+* ~~Build markup structure~~
+* ~~Get Sassy CSS and build my variables for SCSS~~
+* ~~Do the Main title of website~~
+* ~~Do About Me section~~
+* ~~Get photo to have shadow and about me title to hover over it nicely~~
+* ~~Do portfolio section~~
+* ~~Create the hover description boxes that come over the photo~~
+* ~~Add the actual pictures of the projects~~
+* ~~Do the footer/reach me section~~
+* ~~Redesigned website using scss~~
+* Make navigation menu transition nicely
+* Fill out About Me section and add boxes for hobbies
+* Change footer for "Reach Me" into an actual section
+* Make Reach me icons fade red nicely
+* Add a section for my resume that allows client to download/view it
+
