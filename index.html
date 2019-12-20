@@ -3,96 +3,170 @@
 
 <head>
   <title>Nabeel Warsalee</title>
-  <link rel="icon" 
-      type="image/png" 
-      href="images/NW-Logo-blackred.png">
-  <link href="styles/main.css" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="images/NW-Logo-blackred.png">
+  <link href="styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <div class="welcome">
-    <h1><span>Nabeel Warsalee</span>2nd Year Computer Science Student</h1>
-  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="about_me">
-    <img src="images/nabeel_about.jpg" alt="Art picture of Nabeel Warsalee" class="about_img">
-    <h1 class="about_title">About Me</h1>
-    <h2 class="about_subtitle">Hello, I'm <span class="name">Nabeel</span>!<br>Here's a little bit about me,</h2>
-    <div class="about_text">
-      <p>It was difficult to explain to them how the diagnosis of certain death had actually given him life. While everyone around him was in tears and upset, he actually felt more at ease. The doctor said it would be less than a year. That gave him a year to live, something he'd failed to do with his daily drudgery of a routine that had passed as life until then.</p>
-      <p>The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. ",Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis," it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table.</p>
+
+  <div class="container_all">
+    <div class="welcome" id="home">
+      <button class="menu_button">
+        <svg class="menu_icon" height="32px" viewBox="0 0 32 32" width="32px">
+          <path
+            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+        </svg>
+        <svg class="x_icon" x="0px" y="0px" viewBox="0 0 32 32" height="32px" width="32px">
+          <path
+            d="M6.2,24.3l18-18c0.3-0.3,0.8-0.3,1.2,0l0.3,0.3c0.3,0.3,0.3,0.8,0,1.2l-18,18c-0.3,0.3-0.8,0.3-1.2,0l-0.3-0.3C5.9,25.1,5.9,24.6,6.2,24.3z" />
+          <path
+            d="M24.2,25.7l-18-18c-0.3-0.3-0.3-0.8,0-1.2l0.3-0.3C6.9,6,7.4,6,7.7,6.3l18,18c0.3,0.3,0.3,0.8,0,1.2l-0.3,0.3C25.1,26.1,24.5,26.1,24.2,25.7z" />
+        </svg>
+      </button>
+      <h1><span>Nabeel Warsalee</span>2nd Year Computer Science Student</h1>
     </div>
-  </section>
 
-  <section class="portfolio">
-    <div class="portfolio_header">
-      <h1>My Projects</h1>
-    </div>
-    <div class="portfolio_items">
-      <!-- Portfolio item 1 -->
-      <figure class="portfolio_item featured">
-        <img src="images/DayZero-1024.png" alt="Day-Zero Project picture">
-        <figcaption>
-          <h2 class="portfolio_title">Day Zero</h2>
-          <p class="portfolio_descr">Zombie arcade game made with my partner Eren Sulutas. Based in Processing, the game applies many fundamental programming concepts such as, Object Oriented Design, use of 2D arrays, ArayLists, file writing and more. My main role on this project was the game mechanics and logic. I created things like the movement, the random spawning of zombies and how the zombies interact with the player and more. For the whole breakdown of the project, please visit the Github repo.</p>
-          <a href="https://github.com/nwarsalee/DayZero-Nabeel-Eren" class="portfolio_link" target="_blank">GitHub page</a>
-        </figcaption>
-      </figure>
+    <section class="about_me" id="about">
+      <img src="images/nabeel_about.jpg" alt="Art picture of Nabeel Warsalee" class="about_img">
+      <h1 class="about_title">About Me</h1>
+      <h2 class="about_subtitle">Hello, I'm <span class="name">Nabeel</span>!<br>Here's a little bit about me,</h2>
+      <div class="about_text">
+        <p>It was difficult to explain to them how the diagnosis of certain death had actually given him life. While
+          everyone around him was in tears and upset, he actually felt more at ease. The doctor said it would be less
+          than a year. That gave him a year to live, something he'd failed to do with his daily drudgery of a routine
+          that had passed as life until then.</p>
+        <p>The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of
+          brownish liquid. ",Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis," it
+          informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table.</p>
+      </div>
+    </section>
 
-      <!-- Portfolio item 2 -->
-      <figure class="portfolio_item">
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio_header">
+        <h1>My Projects</h1>
+      </div>
+      <div class="portfolio_items">
+        <!-- Portfolio item 1 -->
+        <figure class="portfolio_item featured">
+          <img src="images/DayZero-1024.png" alt="Day-Zero Project picture">
+          <figcaption>
+            <h2 class="portfolio_title">Day Zero</h2>
+            <p class="portfolio_descr">Zombie arcade game made with my partner Eren Sulutas. Based in Processing, the
+              game applies many fundamental programming concepts such as, Object Oriented Design, use of 2D arrays,
+              ArayLists, file writing and more. My main role on this project was the game mechanics and logic. I created
+              things like the movement, the random spawning of zombies and how the zombies interact with the player and
+              more. For the whole breakdown of the project, please visit the Github repo.</p>
+            <a href="https://github.com/nwarsalee/DayZero-Nabeel-Eren" class="portfolio_link" target="_blank">
+              <svg class="github_icon" width="32" height="32" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)" />
+              </svg>
+            </a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 2 -->
+        <figure class="portfolio_item">
           <img src="images/danny_devito_site_1024.png" alt="How Much are you like Danny Devito site">
           <figcaption>
             <h2 class="portfolio_title">How much are you like Danny Devito</h2>
-            <p class="portfolio_descr">My team's CUHacking 2019 project. It would take a photo that you upload to the site and use a facial comparison algorithm to see how much the photo you entered has in common with Danny Devito.</p>
-            <a href="https://github.com/Megapead/LearningHacks" class="portfolio_link" target="_blank">GitHub page</a>
+            <p class="portfolio_descr">My team's CUHacking 2019 project. It would take a photo that you upload to the
+              site and use a facial comparison algorithm to see how much the photo you entered has in common with Danny
+              Devito.</p>
+            <a href="https://github.com/Megapead/LearningHacks" class="portfolio_link" target="_blank">
+              <svg class="github_icon" width="32" height="32" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)" />
+              </svg>
+            </a>
           </figcaption>
         </figure>
 
         <!-- Portfolio item 3 -->
-      <figure class="portfolio_item">
+        <figure class="portfolio_item">
           <img src="images/TowersOfHanoi-1024.png" alt="Processing Towers of Hanoi Project">
           <figcaption>
             <h2 class="portfolio_title">Towers of Hanoi Visualization</h2>
-            <p class="portfolio_descr">Visualization of the reknown recursion problem of the Towers of Hanoi. Allows you to select the number of discs and will show what moves are needed to complete the problem.</p>
-            <a href="https://github.com/nwarsalee/TowersOfHanoiVisual" class="portfolio_link" target="_blank">GitHub page</a>
+            <p class="portfolio_descr">Visualization of the reknown recursion problem of the Towers of Hanoi. Allows you
+              to select the number of discs and will show what moves are needed to complete the problem.</p>
+            <a href="https://github.com/nwarsalee/TowersOfHanoiVisual" class="portfolio_link" target="_blank">
+              <svg class="github_icon" width="32" height="32" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)" />
+              </svg>
+            </a>
           </figcaption>
         </figure>
 
         <!-- Portfolio item 4 -->
-      <figure class="portfolio_item">
+        <figure class="portfolio_item">
           <img src="images/Connect4_java_1024.png" alt="Java Connect 4 app">
           <figcaption>
             <h2 class="portfolio_title">Connect 4 Java Game</h2>
-            <p class="portfolio_descr">Command line "Connect Four" game made in Java. Has a menu that tells you the how ot play and let's you play with another person or an AI that I designed and programmed myself.</p>
-            <a href="https://github.com/nwarsalee/Connect-Four-ICS3U-Summative-Game" class="portfolio_link" target="_blank">GitHub page</a>
+            <p class="portfolio_descr">Command line "Connect Four" game made in Java. Has a menu that tells you the how
+              to play and let's you play with another person or an AI that I designed and programmed myself.</p>
+            <a href="https://github.com/nwarsalee/Connect-Four-ICS3U-Summative-Game" class="portfolio_link"
+              target="_blank">
+              <svg class="github_icon" width="32" height="32" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)" />
+              </svg>
+            </a>
           </figcaption>
         </figure>
 
         <!-- Portfolio item 5 -->
-      <figure class="portfolio_item">
+        <figure class="portfolio_item">
           <img src="images/pong-1024.png" alt="Python Pong Game">
           <figcaption>
             <h2 class="portfolio_title">Python Pong Game</h2>
-            <p class="portfolio_descr">Pong game using the SimpleGraphics library in python. Two player game using the keyboard's WASD and arrow keys./</p>
-            <a href="https://github.com/nwarsalee/Python-Pong" class="portfolio_link" target="_blank">GitHub page</a>
+            <p class="portfolio_descr">Pong game using the SimpleGraphics library in python. Two player game using the
+              keyboard's WASD and arrow keys.</p>
+            <a href="https://github.com/nwarsalee/Python-Pong" class="portfolio_link" target="_blank">
+              <svg class="github_icon" width="32" height="32" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)" />
+              </svg>
+            </a>
           </figcaption>
         </figure>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer>
-    <h1>Reach me at...</h1>
-    <div class="social_icons">
-      <a href="mailto:nabeel.warsalee@gmail.com" target="_blank"><img class="social_icon" src="images/mail-white.png" alt="email"></a>
-      <a href="https://github.com/nwarsalee" target="_blank"><img class="social_icon" src="images/github-white.png" alt="github"></a>
-      <a href="https://www.linkedin.com/in/nabeel-warsalee/" target="_blank"><img class="social_icon" src="images/linkedin-white.png" alt="linkedIn"></a>
-    </div>
-    <p>
-    <copyright>© Nabeel Warsalee 2019</copyright>
-  </footer>
+    <section id="contact">
+      <footer>
+        <h1>Reach me at...</h1>
+        <div class="social_icons">
+          <a href="mailto:nabeel.warsalee@gmail.com" target="_blank"><img class="social_icon"
+              src="images/mail-white.png" alt="email"></a>
+          <a href="https://github.com/nwarsalee" target="_blank"><img class="social_icon" src="images/github-white.png"
+              alt="github"></a>
+          <a href="https://www.linkedin.com/in/nabeel-warsalee/" target="_blank"><img class="social_icon"
+              src="images/linkedin-white.png" alt="linkedIn"></a>
+        </div>
+        <p>
+          <copyright>© Nabeel Warsalee 2019</copyright>
+      </footer>
+    </section>
+  </div>
+
+  <script src="js/nav.js"></script>
 
 </body>
 

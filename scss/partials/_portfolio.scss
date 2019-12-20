@@ -71,10 +71,21 @@
     font-weight: $fw-b;
     font-size: 1.1rem;
     text-decoration: none;
-    border-bottom: 2px solid $white;
+    margin-top: 10px;
+    //border-bottom: 2px solid $white;
     align-self: flex-start;
 
     // Figure out how to put an icon for the link
+}
+
+.github_icon {
+    fill: $white;
+    transition: fill ease-in-out 200ms;
+}
+
+.github_icon:hover {
+    fill: $dark-blue;
+    transition: fill ease-in-out 200ms;
 }
 
 @supports (display: grid) {
@@ -103,11 +114,10 @@
 
     .portfolio_descr {
         @include mq($width: 1200px) {
-            font-size: 14px;
+            font-size: 1em;
             display: contents;
-            line-height: 0;
             .featured & {
-                font-size: 24px;
+                font-size: 2rem;
             }
         }
     }
