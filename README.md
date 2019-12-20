@@ -27,6 +27,7 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * ~~Add the actual pictures of the projects~~
 * ~~Do the footer/reach me section~~
 * ~~Redesigned website using scss~~
+* **FIX RGB REACH ME BUTTONS**
 * Make navigation menu transition nicely
 * Fill out About Me section and add boxes for hobbies
 * Change footer for "Reach Me" into an actual section
