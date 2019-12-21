@@ -1,11 +1,12 @@
 .menu_button {
-    position: absolute;
-    top: 1em;
-    left: 1em;
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
     background: transparent;
     border: 0;
+    z-index: 15;
 
-    fill: $white;
+    fill: $gray;
 }
 
 nav {
@@ -13,11 +14,11 @@ nav {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 20%;
+    right: 0;
     z-index: 10;
 
-    transform: translateX(-100%);
-    transition: transform ease-out 500ms;
+    transform: translateY(-100%);
+    transition: transform ease-in-out 250ms;
 }
 
 nav ul {
@@ -25,49 +26,52 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
     align-items: stretch;
-    background: $accent;
+    background: rgba($accent, 0.90);
 }
 
 nav li {
-    text-align: center;
+    text-align: right;
 
     &:not(:last-of-type) {
-        border-bottom: 1px solid $white;
+        //border-right: 1px solid $white;
     }
 }
 
-nav li:hover {
-    background: rgb(180, 46, 46);
+nav li a:hover {
+    color: $dark-blue;
+    transition: color ease-in-out 200ms;
 }
 
 nav a {
     display: inline-block;
     text-decoration: none;
-    @include sans-serif($fs : 4rem, $colour: $white);
-    padding: calc(100vh/8) 0;
+    @include sans-serif($fs : 1.5rem, $colour: $white);
+    padding: calc(20vh/8) 0;
     line-height: 0;
     width: 100%;
+    transition: color ease-in-out 200ms;
 }
 
 .x_icon {
     display: none;
-    position: absolute;
+    position: fixed;
 }
 
 .nav_is_open {
-    height: 100vh;
-    overflow-y: hidden;
+    //height: 100vh;
+    //overflow-y: hidden;
 
     nav {
         transform: translate(0);
+        transition: transform ease-in-out 250ms;
     }
 
     .container_all {
-        transform: translateX(80%);
+        //transform: translateY(1%);
     }
 
     .menu_icon {
@@ -79,14 +83,15 @@ nav a {
     }
 
     .menu_button {
-        transform: translate(-50%);
+        transform: translate(20%);
     }
 }
 
 /*.container_all {
-    transition: transform ease-out 500ms;
+    transition: transform ease-in-out 250ms;
 }*/
 
 .menu_button:hover {
-    fill: $gray;
+    fill: $dark-blue;
+    transition: fill ease-in-out 200ms;
 }

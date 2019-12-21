@@ -57,12 +57,17 @@
 }
 
 .portfolio_descr {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1;
     .featured & {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1;
-        display: contents;
+    }
+    @include mq_2($width:400px) {
+        font-size: 24px;
+            .featured & {
+                font-size: 32px;
+            }
     }
 }
 
@@ -113,7 +118,7 @@
     }
 
     .portfolio_descr {
-        @include mq($width: 1200px) {
+        @include mq($width: 1600px) {
             font-size: 1em;
             display: contents;
             .featured & {
