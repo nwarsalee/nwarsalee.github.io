@@ -93,6 +93,48 @@
     transition: fill ease-in-out 200ms;
 }
 
+.languages_title {
+    color: $accent;
+    margin: 1em 0;
+}
+
+.portfolio_languages {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio_languages_img {
+    margin: 0 auto;
+    fill: $gray;
+    transition: fill ease-in-out 200ms;
+
+    .javascript {
+        stroke: $gray;
+        stroke-width: 30;
+        transition: stroke ease-in-out 200ms;
+    }
+
+    h3 {
+        transition: color ease-in-out 200ms;
+    }
+}
+
+.portfolio_languages_img:hover {
+    fill: $accent;
+    transition: fill ease-in-out 200ms;
+
+    .javascript {
+        stroke: $accent;
+        transition: stroke ease-in-out 200ms;
+    }
+
+    h3 {
+        color: $accent;
+        transition: color ease-in-out 200ms;
+    }
+}
+
+
 @supports (display: grid) {
     .portfolio_items {
         display: grid;
