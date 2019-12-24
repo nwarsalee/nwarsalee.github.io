@@ -40,4 +40,5 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * Proofread site
 * Clean /images folder
 * Make favicon work on more browsers
+* Fix font sizing on "Projects" session for mobile 
 
