@@ -30,12 +30,15 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * ~~Changed navigation bar to slide out vertically (ie. its a horizontal bar)~~
 * ~~Fill out About Me section and add boxes for hobbies~~
 * ~~Add "known language" sub section as part of the portfolio section~~
-* **FIX RGB REACH ME BUTTONS**
+* ~~FIX RGB REACH ME BUTTONS~~
+* ~~Change footer for "Reach Me" into an actual section~~
+* ~~Make Reach me icons fade red nicely~~
+* Make email address show without hover??
 * Make navigation menu transition nicely
-* Change footer for "Reach Me" into an actual section
-* Make Reach me icons fade red nicely
 * Add a section for my resume that allows client to download/view it
 * Fix the navigation bar on mobile and the font size of portfolio on mobile
 * Proofread site
 * Clean /images folder
+* Make favicon work on more browsers
+* Fix font sizing on "Projects" session for mobile 
 
