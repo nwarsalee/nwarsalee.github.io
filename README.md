@@ -33,9 +33,11 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * ~~FIX RGB REACH ME BUTTONS~~
 * ~~Change footer for "Reach Me" into an actual section~~
 * ~~Make Reach me icons fade red nicely~~
+* Make email address show without hover??
 * Make navigation menu transition nicely
 * Add a section for my resume that allows client to download/view it
 * Fix the navigation bar on mobile and the font size of portfolio on mobile
 * Proofread site
 * Clean /images folder
+* Make favicon work on more browsers
 
