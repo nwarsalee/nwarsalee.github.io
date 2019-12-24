@@ -28,12 +28,14 @@ Visit website here: [nwarsalee.github.io](https://nwarsalee.github.io)
 * ~~Do the footer/reach me section~~
 * ~~Redesigned website using scss~~
 * ~~Changed navigation bar to slide out vertically (ie. its a horizontal bar)~~
+* ~~Fill out About Me section and add boxes for hobbies~~
+* ~~Add "known language" sub section as part of the portfolio section~~
 * **FIX RGB REACH ME BUTTONS**
 * Make navigation menu transition nicely
-* Fill out About Me section and add boxes for hobbies
 * Change footer for "Reach Me" into an actual section
 * Make Reach me icons fade red nicely
 * Add a section for my resume that allows client to download/view it
-* Add "known language" sub section as part of the portfolio section
 * Fix the navigation bar on mobile and the font size of portfolio on mobile
+* Proofread site
+* Clean /images folder
 
