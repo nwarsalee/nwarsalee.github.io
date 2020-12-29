@@ -2,7 +2,7 @@
     background-image: url(../images/nabeel_nara_log.JPG);
     background-size: cover;
     background-position: center;
-    
+
     height: 80vh;
     display: flex;
     align-items: center;
@@ -15,9 +15,9 @@
         line-height: 1.5;
         text-align: center;
 
-        //background-color: rgba(214, 214, 214, 0.295);
-        //border-radius: 25px;
-        //padding: 15px;
+        // background-color: rgba(214, 214, 214, 0.295);
+        // border-radius: 25px;
+        // padding: 15px;
         @include mq {
             font-size: 2vw;
         }
